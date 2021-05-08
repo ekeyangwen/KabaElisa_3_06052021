@@ -6,7 +6,7 @@
   
     <title>Ohmyfood</title>
 
-<link rel="stylesheet" href="./sass/style.cssgit add">
+<link rel="stylesheet" href="./sass/style.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -31,7 +31,11 @@ crossorigin="anonymous"
         src="images/logo/ohmyfood.png"
         alt="logo Ohmyfood"/>
       <!--insertion image logo-->
+</header>
 
+<main>
+
+  <section class="accueil_section">
       <form class="formulaire">
         <i class="fas fa-map-marker-alt"></i>
         <!--lien icon maps -->
@@ -40,22 +44,22 @@ crossorigin="anonymous"
           type="text"
           name="city"
           value="Paris, Belleville"/>
+        </form>
+
       <h1> Réservez le menu qui vous convient</h1>
       
       <p> Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
 
       <button class="btn">Explorer nos restaurants</button>
+</section>
 
-</header>
 
-<main>
-
-<section class="accueil_section_1"><!--Premier rectangle: fonctionnement du service-->
+<section class="accueil_section"><!--Premier rectangle: fonctionnement du service-->
 
   <h2>Fonctionnement</h2> 
 
   <article>
-    <section class="accueil_section_1-in">
+    <section class="accueil_section accueil_section--in">
 
       <span class="un">
         1
@@ -65,7 +69,7 @@ crossorigin="anonymous"
       <h3>Choisissez un restaurant</h3>
     </section>
 
-    <section class="section_1-in">
+    <section class="accueil_section accueil_section--in">
 
       <span class="deux">
         2
@@ -75,7 +79,7 @@ crossorigin="anonymous"
       <h3>Composez votre menu </h3>
     </section>
 
-    <section class="section_1-in">
+    <section class="accueil_section accueil_section--in">
 
       <span class="trois">
         3
@@ -87,40 +91,40 @@ crossorigin="anonymous"
   </article>
 </section>
 
-<section class="accueil_section_2"><!--Second rectangle: Présentation des restaurants-->
+<section class="accueil_section"><!--Second rectangle: Présentation des restaurants-->
   <h2>Restaurants</h2>
 
 
-<article class="prez_resto_body">
-  <p class="new">Nouveau</p>
+<article class="body_prez-resto body_prez-resto--new">
+  <p class="new_border">Nouveau</p>
 
   <p class="ensemble_resto">
-    <p class="nom_resto">
+    <p class="resto_nom">
       <h3>La palette du goût</h3>
       <p>Ménilmontant</p>
-    </p>
+    <p>
     <i class="far fa-heart"></i>
   </p>
 </article>
 
-<article class="prez_resto_body">
-  <p class=new>Nouveau</p>
+<article class="body_prez-resto body_prez-resto--new">
+  <p class="new_border">Nouveau</p>
 
   <p class="ensemble_resto">
-    <p class="nom_resto">
+    <p class="resto_nom">
       <h3>La note enchantée</h3>
       <p>Charonne</p>
-    </p>
+    <p class="heart">
     <i class="far fa-heart"></i>
   </p>
 </article>
 
-<article class="prez_resto_body--2">
+<article class="body_prez-resto">
   <p class="ensemble_resto">
-    <p class="nom_resto">
+    <p class="resto_nom">
       <h3>À la française</h3>
       <p>Cité Rouge</p>
-    </p>
+    <p class="heart">
     <i class="far fa-heart"></i>
   </p>
 
@@ -128,10 +132,10 @@ crossorigin="anonymous"
 
 <article class="prez_resto_body--2">
   <p class="ensemble_resto">
-    <p class="nom_resto">
+    <p class="resto_nom">
       <h3>Le délice des sens</h3>
       <p>Folie-Méricourt</p>
-    </p>
+    <p class="heart">
     <i class="far fa-heart"></i>
   </p>
 
