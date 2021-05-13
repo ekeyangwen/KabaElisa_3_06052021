@@ -1,0 +1,18 @@
+
+@mixin center ($width: 50%, $display: block, $margin:auto) {
+    width: $width;
+    display: $display;
+    margin: $margin;
+   
+}
+
+@mixin cote {
+    margin: 2rem;
+}
+
+
+@mixin colonne{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
