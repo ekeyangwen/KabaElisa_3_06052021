@@ -1,84 +1,13 @@
 @import "./Utils/variables";
-@import "./Utils/fonctions";
+@import "./Utils/conditions";
+@import "./Utils/mixins";
 @import "./Components/animations";
 @import "./Components/buttons";
+@import "./Components/forms";
+@import "./Components/icons";
+@import "./Layout/body";
 @import "./Layout/header";
 @import "./Layout/main";
 @import "./Layout/footer";
-
-
-body{
-    margin: 0rem;
-    font-family: $font;
-}
-
-header{
-@include center (100%);
-border: solid $fond;
-box-shadow: 3px 3px 3px $fond;
-
-
-  
- 
-}
-
-.logo{
-
-font-family: $font_titre;
-
-   &_header{
-
-@include center;
-margin-top: 2rem;
-margin-bottom: 1rem;
-}
-    
-}
-
-.accueil_section{
-    @include cote;
-    @include colonne;
-
-}
-
-form{
-    @include center (100%, flex);
-flex-direction: row;
-justify-content: center;
-background-color: $fond;
-padding: 2rem;
-margin-left: -2rem;
-margin-top: -2rem;
-padding-top: 1rem;
-padding-bottom: 1rem;
-
-
-}
-
-.fa-map-marker-alt{
-
-font-size: 1rem;
-}
-
-.champville {
-@include center (45%, flex, 0);
-margin-left: 1rem;
-text-align: center;
-font-size: 1rem;
-font-family: $font;
-font-weight: 500;
-border: none;
-background-color: $fond;
-}
-
-h1{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 900;
-}
-p{
-
-    font-size: 1rem;
-    text-align: center;
-    
-}
+@import "./Pages/header_accueil";
+@import "./Pages/loader";

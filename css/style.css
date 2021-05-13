@@ -1,74 +1,71 @@
+.btn {
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+
+.champville {
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+i {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
 body {
   margin: 0rem;
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  width: 100%;
-  display: block;
-  margin: auto;
-  border: solid #eaeaea;
-  box-shadow: 3px 3px 3px #eaeaea;
+.section_main {
+  text-align: center;
+}
+.section_fonction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2rem;
 }
 
-.logo {
-  font-family: "Shrikhand", cursive;
+.h1_titre {
+  font-size: 2rem;
+  margin: 1rem;
 }
-.logo_header {
+.h1_titre--nobold {
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+.header {
+  border-bottom: solid #eaeaea;
+  box-shadow: 3px;
+}
+.header_logo {
   width: 50%;
   display: block;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 1rem;
-}
-
-.accueil_section {
-  margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-form {
-  width: 100%;
-  display: flex;
-  margin: auto;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #eaeaea;
-  padding: 2rem;
-  margin-left: -2rem;
-  margin-top: -2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.fa-map-marker-alt {
-  font-size: 1rem;
-}
-
-.champville {
-  width: 45%;
-  display: flex;
-  margin: 0;
-  margin-left: 1rem;
-  text-align: center;
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   border: none;
-  background-color: #eaeaea;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-p {
-  font-size: 1rem;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
