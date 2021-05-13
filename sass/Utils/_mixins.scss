@@ -1,0 +1,42 @@
+@mixin center($width: 50%, $display: block, $margin: auto) {
+  width: $width;
+  display: $display;
+  margin: $margin;
+}
+
+@mixin cote {
+  margin: 2rem;
+}
+
+@mixin colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin margin-topbot {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@mixin btn {
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(
+    to bottom right,
+    $second-color,
+    60%,
+    $first-color
+  );
+}

@@ -1,18 +1,6 @@
-
-@mixin center ($width: 50%, $display: block, $margin:auto) {
-    width: $width;
-    display: $display;
-    margin: $margin;
-   
-}
-
-@mixin cote {
-    margin: 2rem;
-}
-
-
-@mixin colonne{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
+$first-color: #9356dc;
+$second-color: #ff79da;
+$third-color: #99e2d0;
+$fourth-color: #eaeaea;
+$font_titre: "Shrikhand", sans-serif;
+$font: "Roboto", sans-serif;

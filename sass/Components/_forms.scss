@@ -1,0 +1,15 @@
+.formulaire {
+  @include row;
+  justify-content: center;
+  align-self: center;
+  background-color: $light-fourth-color;
+}
+
+.champville {
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  @include margin-topbot;
+  margin-left: 1rem;
+  font-weight: 700;
+}
