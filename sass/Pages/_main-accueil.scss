@@ -1,0 +1,129 @@
+.section {
+  &_main {
+    text-align: center;
+    background: linear-gradient(0, $light-fourth-color, transparent);
+  }
+  &_fonction {
+    @include carte;
+  }
+  &_fonction--in {
+    @include row;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    @include border;
+    &:hover {
+      background-color: $light-first-color;
+    }
+  }
+  &_resto {
+    @include carte;
+    margin-top: 4rem;
+  }
+
+  &_resto--new {
+    @include new;
+    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    border-radius: 20px 20px 0px 0px;
+    width: 258px;
+    height: 145px;
+  }
+
+  &_resto--newand {
+    @include new;
+    background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    border-radius: 20px 20px 0px 0px;
+  }
+  &_resto--carte {
+    width: 258px;
+    height: 145px;
+  }
+}
+
+.h1_titre {
+  font-size: 1.5rem;
+  margin: 1rem;
+
+  &--nobold {
+    @include nobold;
+  }
+}
+
+article {
+  @include colonne;
+}
+
+.chiffre {
+  margin-top: 1.1rem;
+  margin-right: 1.5rem;
+  background-color: $first-color;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  &--in {
+    font-size: 0.7rem;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+    color: white;
+    font-weight: 400;
+  }
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 1.3rem;
+}
+
+.carte_resto {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0px 0px;
+  &--new {
+    @extend .carte_resto;
+    position: absolute;
+  }
+}
+
+.new_border {
+  background-color: #99e2d0;
+  width: 25%;
+  height: 10%;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  @include padding-topbot;
+}
+
+.ensemble_resto {
+  @include row;
+  justify-content: space-between;
+}
+
+.resto {
+  margin-bottom: 1rem;
+  @include border;
+  @include padding-cote;
+
+  &_nom {
+    @include colonne;
+  }
+}
+
+.nom--nobold {
+  @include nobold;
+}
+
+h4 {
+  margin: 0rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+p {
+  @include nobold;
+  margin-top: 0rem;
+  margin-left: 0rem;
+}

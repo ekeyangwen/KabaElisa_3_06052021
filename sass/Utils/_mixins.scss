@@ -24,6 +24,16 @@
   margin-bottom: 1rem;
 }
 
+@mixin padding-topbot {
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+
+@mixin padding-cote {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @mixin btn {
   border: none;
   border-radius: 50px;
@@ -39,4 +49,42 @@
     60%,
     $first-color
   );
+}
+
+@mixin carte {
+  @include colonne;
+  margin: 1rem;
+}
+
+@mixin img-carte {
+  width: 258px;
+  height: 145px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin new {
+  @include row;
+  @include img-carte;
+  justify-content: flex-end;
+  color: $dark-third-color;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+@mixin nobold {
+  margin: 1rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+@mixin pointer {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+@mixin border($border-radius: 20px) {
+  border-radius: $border-radius;
+  box-shadow: 3px 3px 3px $fourth-color;
 }

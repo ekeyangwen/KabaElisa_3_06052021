@@ -5,8 +5,22 @@
   margin-left: 2rem;
 }
 .icon {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   margin-right: 1rem;
   color: $dark-fourth-color;
   font-family: $font_titre;
+  &--heart {
+    margin-top: 0.5rem;
+  }
+  &--couverts {
+    color: white;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  &--hands {
+    @extend .icon--couverts;
+    transform: rotate(-45deg);
+    margin-right: 0rem;
+    margin-left: 0.3rem;
+  }
 }

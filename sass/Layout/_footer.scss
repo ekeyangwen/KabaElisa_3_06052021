@@ -1,0 +1,16 @@
+footer {
+  @include cote;
+  color: white;
+  background-color: $darker-fourth-color;
+  margin: 0rem;
+  padding: 1rem 0rem 1rem 1rem;
+}
+.footer {
+  &_logo {
+    font-family: $font_titre;
+    font-size: 1rem;
+  }
+  &_add-logo {
+    @include row;
+  }
+}
