@@ -24,7 +24,6 @@
     @include new;
     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     border-radius: 20px 20px 0px 0px;
-    width: 258px;
     height: 145px;
   }
 
@@ -34,7 +33,6 @@
     border-radius: 20px 20px 0px 0px;
   }
   &_resto--carte {
-    width: 258px;
     height: 145px;
   }
 }
@@ -100,16 +98,22 @@ h3 {
 .ensemble_resto {
   @include row;
   justify-content: space-between;
+  @include margin-cote;
 }
 
 .resto {
   margin-bottom: 1rem;
   @include border;
-  @include padding-cote;
+  width: 100%;
+  height: 200px;
 
   &_nom {
     @include colonne;
   }
+}
+
+a {
+  height: 100%;
 }
 
 .nom--nobold {

@@ -11,6 +11,9 @@
   font-family: $font_titre;
   &--heart {
     margin-top: 0.5rem;
+    &--titre {
+      margin-top: 1.5rem;
+    }
   }
   &--couverts {
     color: white;
@@ -22,5 +25,11 @@
     transform: rotate(-45deg);
     margin-right: 0rem;
     margin-left: 0.3rem;
+  }
+  &--arrow {
+    font-size: 1rem;
+    margin-top: 2.2rem;
+    margin-left: 1rem;
+    color: $more-darker-fourth-color;
   }
 }

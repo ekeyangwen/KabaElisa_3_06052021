@@ -2,6 +2,7 @@
 @import "./Utils/conditions";
 @import "./Utils/fonctions";
 @import "./Utils/mixins";
+@import "./Utils/keyframes";
 @import "./Components/animations";
 @import "./Components/buttons";
 @import "./Components/forms";
@@ -11,5 +12,4 @@
 @import "./Layout/main";
 @import "./Layout/footer";
 @import "./Pages/header_accueil";
-@import "./Pages/loader";
 @import "./Pages/main-accueil";

@@ -1,0 +1,76 @@
+.h2 {
+  &_title {
+    @include row;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+  &--font {
+    font-family: $font_titre;
+  }
+}
+.img_background {
+  margin: 0rem;
+  height: 235px;
+  position: relative;
+}
+
+.body_resto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px 25px 0 0;
+  background-color: $fourth-color;
+  position: relative;
+  margin-top: -2rem;
+}
+
+.repas {
+  margin: 1rem;
+  margin-top: 0rem;
+}
+
+.h4_main {
+  border-bottom: solid $third-color;
+  width: 15%;
+  @include padding-topbot;
+  font-weight: 400;
+}
+
+.total_resto {
+  @include row;
+  @include border;
+  border-color: $fourth-color;
+  border-radius: 15px;
+  @include padding-cote;
+  @include margin-topbot;
+  height: 55px;
+  justify-content: space-between;
+  &--menu {
+    @include colonne;
+  }
+}
+.bold {
+  font-weight: $bold;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.smaller {
+  font-size: 0.7rem;
+}
+
+.resto {
+  &--menu {
+    &--prix {
+      margin-top: 2rem;
+      font-weight: $bold;
+      font-size: 0.8rem;
+    }
+  }
+}
+.menus_ok {
+  display: none;
+}
+.menu {
+  display: block;
+  text-align: center;
+}

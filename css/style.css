@@ -1,3 +1,62 @@
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #99e2d0;
+  animation: lds-heart 1.5s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
+}
+
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
 .btn {
   border: none;
   border-radius: 50px;
@@ -8,6 +67,8 @@
   font-weight: 700;
   color: white;
   background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .formulaire {
@@ -36,15 +97,168 @@
 }
 
 .icon {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   margin-right: 1rem;
   color: #b7b7b7;
   font-family: "Shrikhand", sans-serif;
+}
+.icon--heart {
+  margin-top: 0.5rem;
+}
+.icon--heart--titre {
+  margin-top: 1.5rem;
+}
+.icon--couverts, .icon--hands {
+  color: white;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.icon--hands {
+  transform: rotate(-45deg);
+  margin-right: 0rem;
+  margin-left: 0.3rem;
+}
+.icon--arrow {
+  font-size: 1rem;
+  margin-top: 2.2rem;
+  margin-left: 1rem;
+  color: #1e1e1e;
 }
 
 body {
   margin: 0rem;
   font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+.header_fleche {
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+.header_fleche_logo {
+  margin-top: 1rem;
+}
+
+.h2_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.h2--font {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.img_background {
+  margin: 0rem;
+  height: 235px;
+  position: relative;
+}
+
+.body_resto {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px 25px 0 0;
+  background-color: #eaeaea;
+  position: relative;
+  margin-top: -2rem;
+}
+
+.repas {
+  margin: 1rem;
+  margin-top: 0rem;
+}
+
+.h4_main {
+  border-bottom: solid #99e2d0;
+  width: 15%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+  font-weight: 400;
+}
+
+.total_resto {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #b7b7b7;
+  border-color: #eaeaea;
+  border-color: #eaeaea;
+  border-radius: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 55px;
+  justify-content: space-between;
+}
+.total_resto--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: 700;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.smaller {
+  font-size: 0.7rem;
+}
+
+.resto--menu--prix {
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.menus_ok {
+  display: none;
+}
+
+.menu {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  margin: 2rem;
+  color: white;
+  background-color: #6b6b6b;
+  margin: 0rem;
+  padding: 1rem 0rem 1rem 1rem;
+}
+
+.footer_logo {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1rem;
+}
+.footer_add-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.header {
+  border-bottom: solid #eaeaea;
+  box-shadow: 3px;
+}
+.header_logo {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: none;
 }
 
 .section_main {
@@ -63,10 +277,50 @@ body {
   margin: 0.5rem;
   margin-left: 1rem;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px #eaeaea;
+  box-shadow: 3px 3px 10px #b7b7b7;
+  border-color: #eaeaea;
 }
 .section_fonction--in:hover {
   background-color: #f2eafb;
+}
+.section_resto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 4rem;
+}
+.section_resto--new {
+  display: flex;
+  flex-direction: row;
+  height: 145px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: flex-end;
+  color: #32b091;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  border-radius: 20px 20px 0px 0px;
+  height: 145px;
+}
+.section_resto--newand {
+  display: flex;
+  flex-direction: row;
+  height: 145px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: flex-end;
+  color: #32b091;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  border-radius: 20px 20px 0px 0px;
+}
+.section_resto--carte {
+  height: 145px;
 }
 
 .h1_titre {
@@ -107,17 +361,72 @@ h3 {
   margin-top: 1.3rem;
 }
 
-.header {
-  border-bottom: solid #eaeaea;
-  box-shadow: 3px;
+.carte_resto, .carte_resto--new {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0px 0px;
 }
-.header_logo {
-  width: 50%;
-  display: block;
-  margin: auto;
-  margin-top: 2rem;
+.carte_resto--new {
+  position: absolute;
+}
+
+.new_border {
+  background-color: #99e2d0;
+  width: 25%;
+  height: 10%;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+}
+
+.ensemble_resto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.resto {
   margin-bottom: 1rem;
-  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #b7b7b7;
+  border-color: #eaeaea;
+  width: 100%;
+  height: 200px;
+}
+.resto_nom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  height: 100%;
+}
+
+.nom--nobold {
+  margin: 1rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+h4 {
+  margin: 0rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+p {
+  margin: 1rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-top: 0rem;
+  margin-left: 0rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,10 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+@mixin margin-cote {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
 @mixin padding-topbot {
   padding-top: 0.2rem;
@@ -57,7 +61,6 @@
 }
 
 @mixin img-carte {
-  width: 258px;
   height: 145px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,7 +87,8 @@
   pointer-events: auto;
 }
 
-@mixin border($border-radius: 20px) {
+@mixin border($border-radius: 20px, $border-color: $fourth-color) {
   border-radius: $border-radius;
-  box-shadow: 3px 3px 3px $fourth-color;
+  box-shadow: 3px 3px 10px $dark-fourth-color;
+  border-color: $border-color;
 }

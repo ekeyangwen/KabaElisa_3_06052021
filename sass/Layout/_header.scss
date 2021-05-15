@@ -1,0 +1,8 @@
+.header_fleche {
+  border: none;
+  @include row;
+
+  &_logo {
+    margin-top: 1rem;
+  }
+}
