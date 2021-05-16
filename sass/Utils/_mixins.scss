@@ -92,3 +92,7 @@
   box-shadow: 3px 3px 10px $dark-fourth-color;
   border-color: $border-color;
 }
+
+@mixin radius {
+  border-radius: 20px 20px 0 0;
+}

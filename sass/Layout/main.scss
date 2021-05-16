@@ -9,9 +9,8 @@
   }
 }
 .img_background {
-  margin: 0rem;
   height: 235px;
-  position: relative;
+  width: 100%;
 }
 
 .body_resto {
@@ -30,8 +29,9 @@
 
 .h4_main {
   border-bottom: solid $third-color;
-  width: 15%;
+  width: 10%;
   @include padding-topbot;
+  margin-bottom: 1rem;
   font-weight: 400;
 }
 
@@ -41,7 +41,6 @@
   border-color: $fourth-color;
   border-radius: 15px;
   @include padding-cote;
-  @include margin-topbot;
   height: 55px;
   justify-content: space-between;
   &--menu {
@@ -70,7 +69,7 @@
 .menus_ok {
   display: none;
 }
-.menu {
+.button {
   display: block;
   text-align: center;
 }
