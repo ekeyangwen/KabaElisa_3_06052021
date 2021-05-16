@@ -13,7 +13,7 @@
   width: 32px;
   height: 32px;
   background: $third-color;
-  animation: lds-heart 5s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .lds-heart div:after,
 .lds-heart div:before {
@@ -56,4 +56,22 @@
   100% {
     transform: scale(0.9);
   }
+}
+.main_load {
+  @extend .body_resto;
+  margin-top: 14rem;
+  @include border;
+}
+.body_load {
+  background-color: $third-color;
+}
+.loader_heart {
+  text-align: center;
+}
+
+.patience {
+  font-size: 1rem;
+  font-weight: $bold;
+  font-family: $font;
+  text-align: center;
 }
