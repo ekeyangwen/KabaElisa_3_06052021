@@ -38,13 +38,19 @@
 .total_resto {
   @include row;
   @include border;
+  border: none;
   border-color: $fourth-color;
   border-radius: 15px;
-  @include padding-cote;
+  padding-left: 1rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
   height: 55px;
   justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
   &--menu {
     @include colonne;
+    text-align: start;
   }
 }
 .bold {
@@ -61,13 +67,24 @@
   &--menu {
     &--prix {
       margin-top: 2rem;
+      @include margin-cote;
       font-weight: $bold;
       font-size: 0.8rem;
     }
   }
 }
 .menus_ok {
+  height: 55px;
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem;
+  border-radius: 0 15px 15px 0;
+  font-size: 1rem;
   display: none;
+  background-color: $third-color;
+  color: white;
 }
 .button {
   display: block;

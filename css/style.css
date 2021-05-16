@@ -132,17 +132,22 @@ a:hover {
   border-radius: 20px;
   box-shadow: 3px 3px 10px #b7b7b7;
   border-color: #eaeaea;
+  border: none;
   border-color: #eaeaea;
   border-radius: 15px;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
   height: 55px;
   justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
 }
 .total_resto--menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: start;
 }
 
 .bold {
@@ -157,12 +162,24 @@ a:hover {
 
 .resto--menu--prix {
   margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-weight: 700;
   font-size: 0.8rem;
 }
 
 .menus_ok {
+  height: 55px;
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem;
+  border-radius: 0 15px 15px 0;
+  font-size: 1rem;
   display: none;
+  background-color: #99e2d0;
+  color: white;
 }
 
 .button {
