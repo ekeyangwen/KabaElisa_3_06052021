@@ -1,0 +1,26 @@
+.total_resto {
+  &:active {
+    & > .menus_ok {
+      height: 55px;
+      width: 20%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin: 0rem;
+      border-radius: 0 15px 15px 0;
+      font-size: 1rem;
+      display: flex;
+      background-color: $third-color;
+      color: white;
+      & > .fa-check-circle {
+        transform: scale(1) rotate(1turn);
+        transition: transform 1s;
+      }
+    }
+  }
+}
+
+.fa-check-circle {
+  transform: scale(0);
+  transition: transform 0s;
+}

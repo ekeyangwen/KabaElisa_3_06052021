@@ -53,6 +53,7 @@
     text-align: start;
   }
 }
+
 .bold {
   font-weight: $bold;
   margin-bottom: 0rem;
@@ -73,19 +74,7 @@
     }
   }
 }
-.menus_ok {
-  height: 55px;
-  width: 20%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0rem;
-  border-radius: 0 15px 15px 0;
-  font-size: 1rem;
-  display: none;
-  background-color: $third-color;
-  color: white;
-}
+
 .button {
   display: block;
   text-align: center;
