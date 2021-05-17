@@ -4,3 +4,7 @@ $darker-fourth-color: darken(#eaeaea, 50%);
 $light-first-color: lighten(#9356dc, 35%);
 $dark-third-color: darken(#99e2d0, 30%);
 $more-darker-fourth-color: darken(#eaeaea, 80%);
+$loader-dur: 10s;
+$loader-delay: 5s;
+$header-delay: $loader-dur + $loader-delay;
+$main-delay: $loader-dur + $loader-delay;

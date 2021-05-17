@@ -1,5 +1,5 @@
 .total_resto {
-  &:active {
+  &:focus {
     & > .menus_ok {
       height: 55px;
       width: 20%;

@@ -1,8 +1,14 @@
-.header_fleche {
-  border: none;
-  @include row;
+.header {
+  &_fleche {
+    border: none;
+    @include row;
 
-  &_logo {
-    margin-top: 1rem;
+    &--logo {
+      margin-left: 5rem;
+      margin-top: 1rem;
+      border: none;
+      font-family: $font_titre;
+      font-size: 2rem;
+    }
   }
 }

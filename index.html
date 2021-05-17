@@ -22,11 +22,13 @@
       src="https://kit.fontawesome.com/08db705dca.js"
       crossorigin="anonymous"
     ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="body_load">
+  <body>
     <!--corps du texte -->
-    <div class="main_load">
+    <section class="main_loader">
       <div class="loader_heart">
         <div class="lds-heart">
           <div></div>
@@ -35,6 +37,160 @@
       <p class="patience">
         Veuillez patienter, vos restaurants préférés se chargent pour vous...
       </p>
-    </div>
+    </section>
+
+    <!--corps du texte -->
+
+    <!--en-tête -->
+    <header class="header_accueil">
+      <p class="header_logo">Ohmyfood</p>
+      <!--insertion image logo-->
+    </header>
+
+    <main class="main_accueil">
+      <!--partie principale de la page-->
+      <form class="formulaire">
+        <i class="fas fa-map-marker-alt"></i>
+        <!--lien icon maps -->
+        <input
+          class="champville"
+          type="text"
+          name="city"
+          value="Paris, Belleville"
+        />
+      </form>
+
+      <section class="section_main">
+        <h1 class="h1_titre">Réservez le menu qui vous convient</h1>
+
+        <p class="h1_titre--nobold">
+          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        </p>
+        <a href="#"> <button class="btn">Explorer nos restaurants</button> </a>
+      </section>
+
+      <section class="section_fonction">
+        <!--Premier rectangle: fonctionnement du service-->
+
+        <h2>Fonctionnement</h2>
+
+        <article>
+          <a href="#">
+            <section class="section_fonction--in">
+              <span class="chiffre">
+                <p class="chiffre--in">1</p>
+              </span>
+              <p class="icon">
+                <i class="fas fa-mobile-alt"></i>
+              </p>
+
+              <h3>Choisissez un restaurant</h3>
+            </section>
+          </a>
+          <a href="#">
+            <section class="section_fonction--in">
+              <span class="chiffre">
+                <p class="chiffre--in">2</p>
+              </span>
+              <p class="icon">
+                <i class="fas fa-list-ul"></i>
+              </p>
+              <h3>Composez votre menu</h3>
+            </section>
+          </a>
+
+          <a href="#">
+            <section class="section_fonction--in">
+              <span class="chiffre">
+                <p class="chiffre--in">3</p>
+              </span>
+              <p class="icon">
+                <i class="fas fa-store"></i>
+              </p>
+              <h3>Dégustez au restaurant</h3>
+            </section>
+          </a>
+        </article>
+      </section>
+
+      <section class="section_resto">
+        <!--Second rectangle: Présentation des restaurants-->
+        <h2>Restaurants</h2>
+        <article class="resto">
+          <a href="menu_palette.html">
+            <div class="section_resto--new">
+              <p class="new_border">Nouveau</p>
+            </div>
+            <div class="ensemble_resto">
+              <div class="resto_nom">
+                <h4>La palette du goût</h4>
+                <p>Ménilmontant</p>
+              </div>
+              <i class="far fa-heart icon--heart"></i>
+            </div>
+          </a>
+        </article>
+
+        <article class="resto">
+          <a href="menu_note.html">
+            <div class="section_resto--newand">
+              <p class="new_border">Nouveau</p>
+            </div>
+            <div class="ensemble_resto">
+              <div class="resto_nom">
+                <h4>La note enchantée</h4>
+                <p clas="nom--nobold">Charonne</p>
+              </div>
+              <i class="far fa-heart icon--heart"></i></div
+          ></a>
+        </article>
+
+        <article class="resto">
+          <a href="menu_francaise.html">
+            <div class="section_resto--carte"></div>
+            <div class="ensemble_resto">
+              <div class="resto_nom">
+                <h4>À la française</h4>
+                <p clas="nom--nobold">Cité Rouge</p>
+              </div>
+              <i class="far fa-heart icon--heart"></i>
+            </div>
+          </a>
+        </article>
+
+        <article class="resto">
+          <a href="menu_delice.html">
+            <div class="section_resto--carteand"></div>
+            <div class="ensemble_resto">
+              <div class="resto_nom">
+                <h4>Le délice des sens</h4>
+                <p clas="nom--nobold">Folie-Méricourt</p>
+              </div>
+
+              <i class="far fa-heart icon--heart"></i>
+            </div>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <!--bas de page-->
+
+      <a href="#"> <p class="footer_logo">ohmyfood</p></a>
+
+      <span class="footer_add-logo">
+        <i class="fas fa-utensils icon--couverts"></i>
+        <a href="#"><p>Proposer un restaurant</p></a>
+      </span>
+
+      <span class="footer_add-logo">
+        <i class="fas fa-handshake icon--hands"></i>
+        <a href="#"><p>Devenir partenaire</p></a>
+      </span>
+
+      <a href="#"> <p>Mentions légales</p></a>
+      <a href="#"><p>Contact</p></a>
+    </footer>
   </body>
 </html>

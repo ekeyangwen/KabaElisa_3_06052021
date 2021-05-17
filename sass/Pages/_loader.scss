@@ -37,41 +37,34 @@
   top: -24px;
   border-radius: 50% 50% 0 0;
 }
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-.main_load {
+.main_loader {
+  background-color: $first-color;
   @extend .body_resto;
-  margin-top: 14rem;
-  @include border;
+  margin: auto;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: hiddenloader $loader-dur linear;
 }
-.body_load {
-  background-color: $third-color;
-}
+
 .loader_heart {
   text-align: center;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 11px;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
 }
 
 .patience {
   font-size: 1rem;
   font-weight: $bold;
   font-family: $font;
+  color: white;
   text-align: center;
 }

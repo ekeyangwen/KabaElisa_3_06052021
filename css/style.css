@@ -1,4 +1,67 @@
-.total_resto:active > .menus_ok {
+@-webkit-keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes hiddenloader {
+  to {
+    display: none;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+@keyframes headerappear {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes mainappear {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.total_resto:focus > .menus_ok {
   height: 55px;
   width: 20%;
   text-align: center;
@@ -11,7 +74,7 @@
   background-color: #99e2d0;
   color: white;
 }
-.total_resto:active > .menus_ok > .fa-check-circle {
+.total_resto:focus > .menus_ok > .fa-check-circle {
   transform: scale(1) rotate(1turn);
   transition: transform 1s;
 }
@@ -107,8 +170,12 @@ a:hover {
   display: flex;
   flex-direction: row;
 }
-.header_fleche_logo {
+.header_fleche--logo {
+  margin-left: 5rem;
   margin-top: 1rem;
+  border: none;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2rem;
 }
 
 .h2_title {
@@ -126,7 +193,7 @@ a:hover {
   width: 100%;
 }
 
-.body_resto, .main_load {
+.body_resto, .main_loader {
   display: flex;
   flex-direction: column;
   border-radius: 25px 25px 0 0;
@@ -213,17 +280,98 @@ footer {
   flex-direction: row;
 }
 
-.header {
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #99e2d0;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
+}
+
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+
+.main_loader {
+  background-color: #9356dc;
+  margin: auto;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: hiddenloader 10s linear;
+}
+
+.loader_heart {
+  text-align: center;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 11px;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.patience {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.header_accueil {
   border-bottom: solid #eaeaea;
   box-shadow: 3px;
+  animation: headerappear 0ms 15s both;
 }
 .header_logo {
-  width: 50%;
-  display: block;
-  margin: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   border: none;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+}
+
+.main_accueil {
+  animation: mainappear 0ms 15s both;
 }
 
 .section_main {
@@ -406,87 +554,6 @@ p {
   font-weight: 100;
   margin-top: 0rem;
   margin-left: 0rem;
-}
-
-.lds-heart {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
-}
-
-.lds-heart div {
-  top: 32px;
-  left: 32px;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background: #99e2d0;
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.lds-heart div:after,
-.lds-heart div:before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
-}
-
-.lds-heart div:before {
-  left: -24px;
-  border-radius: 50% 0 0 50%;
-}
-
-.lds-heart div:after {
-  top: -24px;
-  border-radius: 50% 50% 0 0;
-}
-
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-.main_load {
-  margin-top: 14rem;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px #b7b7b7;
-  border-color: #eaeaea;
-}
-
-.body_load {
-  background-color: #99e2d0;
-}
-
-.loader_heart {
-  text-align: center;
-}
-
-.patience {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

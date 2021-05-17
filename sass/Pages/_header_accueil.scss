@@ -1,10 +1,16 @@
 .header {
-  border-bottom: solid $fourth-color;
-  box-shadow: 3px;
+  &_accueil {
+    border-bottom: solid $fourth-color;
+    box-shadow: 3px;
+    animation: headerappear 0ms $header-delay both;
+  }
   &_logo {
-    @include center;
+    @include margin-cote;
     margin-top: 2rem;
     margin-bottom: 1rem;
     border: none;
+    font-family: $font_titre;
+    font-size: 2rem;
+    text-align: center;
   }
 }

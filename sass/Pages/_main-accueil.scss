@@ -1,3 +1,10 @@
+body {
+  background-color: white;
+}
+
+.main_accueil {
+  animation: mainappear 0ms $main-delay both;
+}
 .section {
   &_main {
     text-align: center;
