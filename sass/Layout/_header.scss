@@ -2,13 +2,12 @@
   &_fleche {
     border: none;
     @include row;
-
+    justify-content: space-around;
     &--logo {
-      margin-left: 5rem;
       margin-top: 1rem;
       border: none;
       font-family: $font_titre;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 }

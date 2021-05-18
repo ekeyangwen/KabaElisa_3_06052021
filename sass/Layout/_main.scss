@@ -3,8 +3,6 @@
     @include row;
     justify-content: space-between;
     margin: 1rem;
-  }
-  &--font {
     font-family: $font_titre;
   }
 }
@@ -51,6 +49,7 @@
   &--menu {
     @include colonne;
     text-align: start;
+    width: 100%;
   }
 }
 
@@ -62,6 +61,7 @@
 
 .smaller {
   font-size: 0.7rem;
+  font-weight: 400;
 }
 
 .resto {
@@ -78,4 +78,7 @@
 .button {
   display: block;
   text-align: center;
+}
+.favoris {
+  border: none;
 }
