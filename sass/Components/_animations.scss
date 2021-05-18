@@ -1,3 +1,12 @@
+.header_accueil {
+  animation: headerappear 3s both;
+}
+.main_accueil {
+  animation: mainappear 3s both;
+}
+.footer_accueil {
+  animation: mainappear 0ms both;
+}
 .total_resto {
   &:focus {
     & > .menus_ok {
@@ -31,5 +40,11 @@
 
 .favoris {
   &:hover {
+    background: linear-gradient(
+      to bottom right,
+      $second-color,
+      60%,
+      $first-color
+    );
   }
 }

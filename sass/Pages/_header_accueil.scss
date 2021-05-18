@@ -2,7 +2,6 @@
   &_accueil {
     border-bottom: solid $fourth-color;
     box-shadow: 3px;
-    animation: headerappear 0ms $header-delay both;
   }
   &_logo {
     @include margin-cote;

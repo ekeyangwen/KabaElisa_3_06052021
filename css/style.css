@@ -38,19 +38,18 @@
     transform: scale(0.9);
   }
 }
-@keyframes hiddenloader {
-  from {
-    display: flex;
+@keyframes loadercache {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    display: none;
-    overflow: hidden;
-    visibility: hidden;
+  100% {
+    transform: translateX(-9999px);
   }
 }
 @keyframes headerappear {
   0% {
     transform: translateX(-9999px);
+    visibility: hidden;
   }
   100% {
     transform: translateX(0);
@@ -90,6 +89,18 @@
     text-overflow: ellipsis;
   }
 }
+.header_accueil {
+  animation: headerappear 3s both;
+}
+
+.main_accueil {
+  animation: mainappear 3s both;
+}
+
+.footer_accueil {
+  animation: mainappear 0ms both;
+}
+
 .total_resto:focus > .menus_ok {
   height: 55px;
   width: 30%;
@@ -116,6 +127,10 @@
 
 .repas {
   animation: fadein 2s;
+}
+
+.favoris:hover {
+  background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
 }
 
 .btn {
@@ -299,6 +314,7 @@ a:hover {
 
 .favoris {
   border: none;
+  background-color: transparent;
 }
 
 footer {
@@ -365,7 +381,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  animation: hiddenloader 2s linear;
+  animation: loadercache 3s 10s both;
 }
 
 .loader_heart {
@@ -391,7 +407,6 @@ footer {
 .header_accueil {
   border-bottom: solid #eaeaea;
   box-shadow: 3px;
-  animation: headerappear 0ms 15s both;
 }
 .header_logo {
   margin-left: 1rem;
@@ -406,10 +421,6 @@ footer {
 
 body {
   background-color: white;
-}
-
-.main_accueil {
-  animation: mainappear 0ms 15s both;
 }
 
 .section_main {

@@ -39,19 +39,18 @@
     transform: scale(0.9);
   }
 }
-@keyframes hiddenloader {
-  from {
-    display: flex;
+@keyframes loadercache {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    display: none;
-    overflow: hidden;
-    visibility: hidden;
+  100% {
+    transform: translateX(-9999px);
   }
 }
 @keyframes headerappear {
   0% {
     transform: translateX(-9999px);
+    visibility: hidden;
   }
   100% {
     transform: translateX(0);
