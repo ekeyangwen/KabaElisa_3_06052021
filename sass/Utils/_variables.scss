@@ -5,3 +5,5 @@ $fourth-color: #eaeaea;
 $font_titre: "Shrikhand", sans-serif;
 $font: "Roboto", sans-serif;
 $bold: 700;
+$gradient: linear-gradient(to bottom right, $second-color, 60%, $first-color);
+$gradientheart: linear-gradient(to top right, $second-color, 30%, $first-color);

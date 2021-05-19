@@ -22,6 +22,7 @@
       src="https://kit.fontawesome.com/08db705dca.js"
       crossorigin="anonymous"
     ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
@@ -46,8 +47,10 @@
           <!--Second rectangle: Présentation des restaurants-->
 
           <h2 class="h2_title--font">À la française</h2>
-
-          <i class="far fa-heart icon--heart--titre"></i>
+          <span class="empty">
+            <i class="far fa-heart coeur--vide"></i>
+            <i class="fas fa-heart icon--heart--titre coeur--plein"></i>
+          </span>
         </section>
 
         <section class="repas">
@@ -196,7 +199,9 @@
       >
 
       <a href="#"> <p>Mentions légales</p></a>
-      <a href="#"><p>Contact</p></a>
+      <a href="mailto:votrenom@bidule.com">
+        <p>Contact</p>
+      </a>
     </footer>
   </body>
 </html>

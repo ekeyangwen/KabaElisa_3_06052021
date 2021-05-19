@@ -41,27 +41,20 @@
 }
 @keyframes loadercache {
   0% {
-    transform: translateX(0);
+    opacity: 1;
   }
   100% {
-    transform: translateX(-9999px);
-  }
-}
-@keyframes headerappear {
-  0% {
-    transform: translateX(-9999px);
+    opacity: 0;
     visibility: hidden;
   }
-  100% {
-    transform: translateX(0);
-  }
 }
-@keyframes mainappear {
+@keyframes accueilappear {
   0% {
-    transform: translateX(-9999px);
+    visibility: hidden;
+    opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes fadein {
@@ -83,13 +76,5 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
-  }
-}
-@keyframes decalmenu {
-  0% {
-  }
-  100% {
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }

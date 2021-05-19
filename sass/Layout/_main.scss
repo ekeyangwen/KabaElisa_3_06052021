@@ -50,6 +50,9 @@
     @include colonne;
     text-align: start;
     width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 }
 
@@ -78,8 +81,4 @@
 .button {
   display: block;
   text-align: center;
-}
-.favoris {
-  border: none;
-  background-color: transparent;
 }

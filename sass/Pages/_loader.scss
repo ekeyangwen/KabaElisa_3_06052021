@@ -41,12 +41,10 @@
   background-color: $first-color;
   @extend .body_resto;
   margin: auto;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  animation: loadercache 3s 10s both;
+  height: 100%;
+  width: 100%;
+  animation: loadercache 2s 2s both;
+  position: fixed;
 }
 
 .loader_heart {

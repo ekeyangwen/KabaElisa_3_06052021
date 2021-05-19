@@ -47,12 +47,7 @@
   padding: 1rem;
   font-weight: 700;
   color: white;
-  background: linear-gradient(
-    to bottom right,
-    $second-color,
-    60%,
-    $first-color
-  );
+  background: $gradient;
 }
 
 @mixin carte {

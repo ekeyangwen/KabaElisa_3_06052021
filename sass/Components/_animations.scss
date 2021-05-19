@@ -1,11 +1,11 @@
 .header_accueil {
-  animation: headerappear 3s both;
+  animation: accueilappear 2s 2s both;
 }
 .main_accueil {
-  animation: mainappear 3s both;
+  animation: accueilappear 2s 2s both;
 }
 .footer_accueil {
-  animation: mainappear 0ms both;
+  animation: accueilappear 2s 2s both;
 }
 .total_resto {
   &:focus {
@@ -33,18 +33,28 @@
 .fa-check-circle {
   transform: scale(0);
   transition: transform 0s;
+  color: $fourth-color;
 }
 .repas {
   animation: fadein 2s;
 }
 
-.favoris {
+.empty {
+  cursor: pointer;
   &:hover {
-    background: linear-gradient(
-      to bottom right,
-      $second-color,
-      60%,
-      $first-color
-    );
+    & > .coeur--plein {
+      opacity: 1;
+      color: transparent;
+      position: relative;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: $gradientheart;
+      animation: accueilappear 1s both;
+      transform: translateX(-2);
+    }
+    & > .coeur--vide {
+      animation: loadercache 0.5s both;
+      transform: translateX(0);
+    }
   }
 }
