@@ -113,12 +113,16 @@
   color: #eaeaea;
 }
 
-.repas {
+.entrees {
+  animation: fadein 1s;
+}
+
+.plats {
   animation: fadein 2s;
 }
 
-.h4_main {
-  animation: fadein 2s;
+.dessert {
+  animation: fadein 3s;
 }
 
 .empty {
@@ -272,7 +276,6 @@ a:hover {
 }
 
 .img_background {
-  height: 235px;
   width: 100%;
 }
 
@@ -356,6 +359,39 @@ a:hover {
   text-align: center;
 }
 
+@media all and (min-width: 576px) {
+  .header_fleche {
+    justify-content: space-between;
+  }
+}
+@media all and (min-width: 1200px) {
+  .img_background {
+    width: 50%;
+    margin-left: 26rem;
+    border-radius: 20px;
+  }
+
+  .body_resto {
+    background-color: white;
+  }
+
+  .menu-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .h2_title {
+    justify-content: center;
+  }
+  .h2_title--font {
+    margin-right: 2rem;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
 footer {
   margin: 2rem;
   color: white;
@@ -440,7 +476,8 @@ footer {
   font-family: "Roboto", sans-serif;
   color: white;
   text-align: center;
-  position: fixed;
+  position: initial;
+  margin: 3rem;
 }
 
 .header_accueil {
@@ -642,6 +679,32 @@ p {
   font-weight: 100;
   margin-top: 0rem;
   margin-left: 0rem;
+}
+
+@media all and (min-width: 768px) {
+  .fonction {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h3 {
+    padding-right: 1rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .resto {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .fonction {
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -143,3 +143,24 @@ p {
   margin-top: 0rem;
   margin-left: 0rem;
 }
+
+@media #{$medium-screen} {
+  .fonction {
+    @include row;
+  }
+  h3 {
+    padding-right: 1rem;
+  }
+}
+
+@media #{$large-screen} {
+  .restaurants {
+    @include row;
+  }
+  .resto {
+    @include margin-cote;
+  }
+  .fonction {
+    justify-content: space-around;
+  }
+}

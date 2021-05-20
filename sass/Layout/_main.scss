@@ -18,7 +18,6 @@
   position: relative;
   margin-top: -2rem;
 }
-
 .repas {
   margin: 1rem;
   margin-top: 0rem;
@@ -85,4 +84,39 @@
 .button {
   display: block;
   text-align: center;
+}
+
+@media #{$small-screen} {
+  .header_fleche {
+    justify-content: space-between;
+  }
+}
+
+@media #{$xlarge-screen} {
+  .img_background {
+    width: 50%;
+    margin-left: 26rem;
+    border-radius: 20px;
+  }
+  .body {
+    &_resto {
+      background-color: white;
+    }
+  }
+  .menu-restaurant {
+    @include row;
+    justify-content: center;
+  }
+
+  .h2 {
+    &_title {
+      justify-content: center;
+      &--font {
+        margin-right: 2rem;
+      }
+    }
+  }
+  .btn {
+    width: 80%;
+  }
 }

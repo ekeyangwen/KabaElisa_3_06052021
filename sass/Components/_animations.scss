@@ -35,11 +35,14 @@
   transition: transform 0s;
   color: $fourth-color;
 }
-.repas {
+.entrees {
+  animation: fadein 1s;
+}
+.plats {
   animation: fadein 2s;
 }
-.h4_main {
-  animation: fadein 2s;
+.dessert {
+  animation: fadein 3s;
 }
 .empty {
   cursor: pointer;
