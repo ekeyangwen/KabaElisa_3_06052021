@@ -39,12 +39,12 @@
 }
 .main_loader {
   background-color: $first-color;
-  @extend .body_resto;
   margin: auto;
   height: 100%;
   width: 100%;
   animation: loadercache 2s 2s both;
   position: fixed;
+  margin-top: -2rem;
 }
 
 .loader_heart {
@@ -65,4 +65,5 @@
   font-family: $font;
   color: white;
   text-align: center;
+  position: fixed;
 }

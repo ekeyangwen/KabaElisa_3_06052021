@@ -1,4 +1,16 @@
 .btn {
   @include btn;
   @include pointer;
+  transition: background-color 1s;
+}
+.button {
+  background-color: transparent;
+  transition: background-color 1s, box-shadow;
+}
+.btn:hover,
+.btn:focus {
+  background: transparent;
+  background: $gradient;
+  opacity: 0.8;
+  box-shadow: 4px 0px 9px $first-color;
 }

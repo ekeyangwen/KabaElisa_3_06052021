@@ -31,6 +31,7 @@
   @include padding-topbot;
   margin-bottom: 1rem;
   font-weight: 400;
+  margin-left: 1rem;
 }
 
 .total_resto {
@@ -65,7 +66,11 @@
 .smaller {
   font-size: 0.7rem;
   font-weight: 400;
-}
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  }
 
 .resto {
   &--menu {

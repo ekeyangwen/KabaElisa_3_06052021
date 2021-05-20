@@ -117,6 +117,10 @@
   animation: fadein 2s;
 }
 
+.h4_main {
+  animation: fadein 2s;
+}
+
 .empty {
   cursor: pointer;
 }
@@ -144,9 +148,24 @@
   padding: 1rem;
   font-weight: 700;
   color: white;
-  background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
+  background: transparent;
+  background-image: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
   cursor: pointer;
   pointer-events: auto;
+  transition: background-color 1s;
+}
+
+.button {
+  background-color: transparent;
+  transition: background-color 1s, box-shadow;
+}
+
+.btn:hover,
+.btn:focus {
+  background: transparent;
+  background: linear-gradient(to bottom right, #ff79da, 60%, #9356dc);
+  opacity: 0.8;
+  box-shadow: 4px 0px 9px #9356dc;
 }
 
 .formulaire {
@@ -257,7 +276,7 @@ a:hover {
   width: 100%;
 }
 
-.body_resto, .main_loader {
+.body_resto {
   display: flex;
   flex-direction: column;
   border-radius: 25px 25px 0 0;
@@ -278,6 +297,7 @@ a:hover {
   padding-bottom: 0.1rem;
   margin-bottom: 1rem;
   font-weight: 400;
+  margin-left: 1rem;
 }
 
 .total_resto {
@@ -317,6 +337,10 @@ a:hover {
 .smaller {
   font-size: 0.7rem;
   font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 
 .resto--menu--prix {
@@ -395,6 +419,7 @@ footer {
   width: 100%;
   animation: loadercache 2s 2s both;
   position: fixed;
+  margin-top: -2rem;
 }
 
 .loader_heart {
@@ -415,6 +440,7 @@ footer {
   font-family: "Roboto", sans-serif;
   color: white;
   text-align: center;
+  position: fixed;
 }
 
 .header_accueil {
