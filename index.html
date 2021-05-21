@@ -28,7 +28,7 @@
 
   <body>
     <!--corps du texte -->
-    <section class="main_loader">
+    <div class="main_loader">
       <div class="loader_heart">
         <div class="lds-heart">
           <div></div>
@@ -37,7 +37,7 @@
       <p class="patience">
         Veuillez patienter, vos restaurants préférés se chargent pour vous...
       </p>
-    </section>
+    </div>
 
     <!--corps du texte -->
 
@@ -66,7 +66,7 @@
         <p class="h1_titre--nobold">
           Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
-        <a href="#"> <button class="btn">Explorer nos restaurants</button> </a>
+        <button class="btn"> <a href="#">Explorer nos restaurants</a></button> 
       </section>
 
       <section class="section_fonction">
@@ -74,12 +74,12 @@
 
         <h2>Fonctionnement</h2>
 
-        <article class="fonction">
+        <div class="fonction">
           <a href="#">
             <section class="section_fonction--in">
-              <span class="chiffre">
+              <article class="chiffre">
                 <p class="chiffre--in">1</p>
-              </span>
+              </article>
               <p class="icon">
                 <i class="fas fa-mobile-alt"></i>
               </p>
@@ -89,9 +89,9 @@
           </a>
           <a href="#">
             <section class="section_fonction--in">
-              <span class="chiffre">
+              <article class="chiffre">
                 <p class="chiffre--in">2</p>
-              </span>
+              </article>
               <p class="icon">
                 <i class="fas fa-list-ul"></i>
               </p>
@@ -101,16 +101,16 @@
 
           <a href="#">
             <section class="section_fonction--in">
-              <span class="chiffre">
+              <article class="chiffre">
                 <p class="chiffre--in">3</p>
-              </span>
+              </article>
               <p class="icon">
                 <i class="fas fa-store"></i>
               </p>
               <h3>Dégustez au restaurant</h3>
             </section>
           </a>
-        </article>
+        </div>
       </section>
 
       <section class="section_resto">
@@ -126,7 +126,9 @@
               <div class="resto_nom">
                 <h4>La palette du goût</h4>
                 <p>Ménilmontant</p>
-              </div></a>
+              </div>
+              </div>
+            </a>
           <span class="empty">
             <i class="far fa-heart coeur--vide"></i>
             <i class="fas fa-heart icon--heart--titre coeur--plein"></i>
@@ -143,7 +145,7 @@
             <div class="ensemble_resto">
               <div class="resto_nom">
                 <h4>La note enchantée</h4>
-                <p clas="nom--nobold">Charonne</p>
+                <p class="nom--nobold">Charonne</p>
               </div>
             </a>
            <span class="empty">
@@ -160,7 +162,7 @@
             <div class="ensemble_resto">
               <div class="resto_nom">
                 <h4>À la française</h4>
-                <p clas="nom--nobold">Cité Rouge</p>
+                <p class="nom--nobold">Cité Rouge</p>
               </div>
             <span class="empty">
             <i class="far fa-heart coeur--vide"></i>
@@ -176,7 +178,7 @@
             <div class="ensemble_resto">
               <div class="resto_nom">
                 <h4>Le délice des sens</h4>
-                <p clas="nom--nobold">Folie-Méricourt</p>
+                <p class="nom--nobold">Folie-Méricourt</p>
               </div>
 
                <span class="empty">
@@ -189,6 +191,7 @@
         </article>
       </section>
       </section>
+    <
     </main>
 
     <footer class="footer_accueil">
