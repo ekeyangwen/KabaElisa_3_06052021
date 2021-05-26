@@ -89,7 +89,7 @@
 }
 
 .total_resto:focus > .menus_ok {
-  height: 55px;
+  height: 65px;
   width: 30%;
   text-align: center;
   align-items: center;
@@ -267,12 +267,16 @@ a:hover {
   font-size: 2.5rem;
 }
 
-.h2_title {
+.h1_title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 1rem;
   font-family: "Shrikhand", sans-serif;
+}
+.h1_title--font {
+  margin-right: 2rem;
+  font-size: 1.5rem;
 }
 
 .img_background {
@@ -309,16 +313,17 @@ a:hover {
   border-radius: 20px;
   box-shadow: 3px 3px 10px #b7b7b7;
   border-color: #eaeaea;
+  height: 65px;
   border: none;
   border-color: #eaeaea;
   border-radius: 15px;
   padding-left: 1rem;
   padding-right: 0rem;
   padding-top: 0rem;
-  height: 55px;
   justify-content: space-between;
   width: 100%;
   cursor: pointer;
+  background-color: white;
 }
 .total_resto--menu {
   display: flex;
@@ -369,29 +374,30 @@ a:hover {
     width: 50%;
     margin-left: 26rem;
     border-radius: 20px;
+    height: 800px;
   }
-
-  .body_resto {
-    background-color: white;
-  }
-
-  .menu-restaurant {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .h2_title {
-    justify-content: center;
-  }
-  .h2_title--font {
-    margin-right: 2rem;
-  }
-
-  .btn {
-    width: 80%;
+  .img_background--resized {
+    width: 50%;
+    margin-left: 26rem;
+    border-radius: 20px;
+    height: 800px;
+    height: 825px;
   }
 }
+.body_resto {
+  background-color: white;
+}
+
+.menu-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn {
+  width: 80%;
+}
+
 footer {
   margin: 2rem;
   color: white;
@@ -667,7 +673,7 @@ a {
   font-weight: 100;
 }
 
-h4 {
+.h3_resto {
   margin: 0rem;
   font-size: 0.9rem;
   font-weight: 500;

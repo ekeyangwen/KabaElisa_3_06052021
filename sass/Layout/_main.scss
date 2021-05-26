@@ -1,9 +1,14 @@
-.h2 {
+.h1 {
   &_title {
     @include row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 1rem;
     font-family: $font_titre;
+
+    &--font {
+      margin-right: 2rem;
+      font-size: 1.5rem;
+    }
   }
 }
 .img_background {
@@ -35,16 +40,17 @@
 .total_resto {
   @include row;
   @include border;
+  height: 65px;
   border: none;
   border-color: $fourth-color;
   border-radius: 15px;
   padding-left: 1rem;
   padding-right: 0rem;
   padding-top: 0rem;
-  height: 55px;
   justify-content: space-between;
   width: 100%;
   cursor: pointer;
+  background-color: white;
   &--menu {
     @include colonne;
     text-align: start;
@@ -94,29 +100,22 @@
 
 @media #{$xlarge-screen} {
   .img_background {
-    width: 50%;
-    margin-left: 26rem;
-    border-radius: 20px;
-  }
-  .body {
-    &_resto {
-      background-color: white;
+    @include img_back;
+    &--resized {
+      @include img_back;
+      height: 825px;
     }
   }
-  .menu-restaurant {
-    @include row;
-    justify-content: center;
+}
+.body {
+  &_resto {
+    background-color: white;
   }
-
-  .h2 {
-    &_title {
-      justify-content: center;
-      &--font {
-        margin-right: 2rem;
-      }
-    }
-  }
-  .btn {
-    width: 80%;
-  }
+}
+.menu-restaurant {
+  @include row;
+  justify-content: center;
+}
+.btn {
+  width: 80%;
 }
