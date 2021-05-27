@@ -88,7 +88,7 @@
   animation: accueilappear 2s 2s both;
 }
 
-.total_resto:focus > .menus_ok {
+.total_resto:hover > .menus_ok {
   height: 65px;
   width: 30%;
   text-align: center;
@@ -102,7 +102,7 @@
   color: white;
   animation: revealAnimation 0s;
 }
-.total_resto:focus > .menus_ok > .fa-check-circle {
+.total_resto:hover > .menus_ok > .fa-check-circle {
   transform: scale(1) rotate(1turn);
   transition: transform 1s;
 }
@@ -292,12 +292,19 @@ a:hover {
   margin-top: -2rem;
 }
 
+.menu-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
 .repas {
   margin: 1rem;
   margin-top: 0rem;
 }
 
-.h4_main {
+.h2_main {
   border-bottom: solid #99e2d0;
   width: 10%;
   padding-top: 0.2rem;
@@ -340,6 +347,10 @@ a:hover {
   font-weight: 700;
   margin-bottom: 0rem;
   margin-top: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 
 .smaller {
@@ -383,21 +394,21 @@ a:hover {
     height: 800px;
     height: 825px;
   }
-}
-.body_resto {
-  background-color: white;
-}
 
-.menu-restaurant {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+  .body_resto {
+    background-color: white;
+  }
 
-.btn {
-  width: 80%;
-}
+  .menu-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
+  .btn {
+    width: 80%;
+  }
+}
 footer {
   margin: 2rem;
   color: white;
@@ -603,6 +614,7 @@ article {
   height: 20px;
   width: 20px;
   border-radius: 50%;
+  margin-left: -10px;
 }
 .chiffre--in {
   font-size: 0.7rem;

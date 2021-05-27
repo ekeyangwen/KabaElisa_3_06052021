@@ -99,3 +99,9 @@
   border-radius: 20px;
   height: 800px;
 }
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}

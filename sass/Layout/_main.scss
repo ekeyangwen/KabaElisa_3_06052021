@@ -23,12 +23,16 @@
   position: relative;
   margin-top: -2rem;
 }
+.menu-restaurant {
+  @include colonne;
+  margin-right: 1rem;
+}
 .repas {
   margin: 1rem;
   margin-top: 0rem;
 }
 
-.h4_main {
+.h2_main {
   border-bottom: solid $third-color;
   width: 10%;
   @include padding-topbot;
@@ -65,15 +69,13 @@
   font-weight: $bold;
   margin-bottom: 0rem;
   margin-top: 1rem;
+  @include ellipsis;
 }
 
 .smaller {
   font-size: 0.7rem;
   font-weight: 400;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
+  @include ellipsis;
 }
 
 .resto {
@@ -106,16 +108,17 @@
       height: 825px;
     }
   }
-}
-.body {
-  &_resto {
-    background-color: white;
+
+  .body {
+    &_resto {
+      background-color: white;
+    }
   }
-}
-.menu-restaurant {
-  @include row;
-  justify-content: center;
-}
-.btn {
-  width: 80%;
+  .menu-restaurant {
+    @include row;
+    justify-content: center;
+  }
+  .btn {
+    width: 80%;
+  }
 }

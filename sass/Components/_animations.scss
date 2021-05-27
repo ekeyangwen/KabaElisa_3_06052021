@@ -8,7 +8,7 @@
   animation: accueilappear 2s 2s both;
 }
 .total_resto {
-  &:focus {
+  &:hover {
     & > .menus_ok {
       height: 65px;
       width: 30%;
