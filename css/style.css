@@ -282,6 +282,9 @@ a:hover {
 .img_background {
   width: 100%;
 }
+.img_background--resized {
+  width: 100%;
+}
 
 .body_resto {
   display: flex;
@@ -378,6 +381,14 @@ a:hover {
 @media all and (min-width: 576px) {
   .header_fleche {
     justify-content: space-between;
+  }
+}
+@media all and (min-width: 768px) {
+  .header_fleche {
+    justify-content: space-between;
+  }
+  .header_fleche--logo {
+    margin-right: 3rem;
   }
 }
 @media all and (min-width: 1200px) {

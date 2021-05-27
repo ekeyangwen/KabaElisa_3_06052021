@@ -13,6 +13,9 @@
 }
 .img_background {
   width: 100%;
+  &--resized {
+    width: 100%;
+  }
 }
 
 .body_resto {
@@ -99,7 +102,14 @@
     justify-content: space-between;
   }
 }
-
+@media #{$medium-screen} {
+  .header_fleche {
+    justify-content: space-between;
+    &--logo {
+      margin-right: 3rem;
+    }
+  }
+}
 @media #{$xlarge-screen} {
   .img_background {
     @include img_back;
@@ -108,7 +118,6 @@
       height: 825px;
     }
   }
-
   .body {
     &_resto {
       background-color: white;
