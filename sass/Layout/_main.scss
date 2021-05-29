@@ -61,10 +61,7 @@
   &--menu {
     @include colonne;
     text-align: start;
-    width: 100%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    @include ellipsis;
   }
 }
 

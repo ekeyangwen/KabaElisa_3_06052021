@@ -340,10 +340,10 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: start;
-  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
 }
 
 .bold {
