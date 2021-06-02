@@ -51,11 +51,9 @@
       opacity: 1;
       color: transparent;
       position: relative;
-      background-clip: text;
-      -webkit-background-clip: text;
       background-image: $gradientheart;
       animation: accueilappear 1s both;
-      transform: translateX(-2);
+      transform: translateX(-2rem);
     }
     & > .coeur--vide {
       animation: loadercache 0.5s both;

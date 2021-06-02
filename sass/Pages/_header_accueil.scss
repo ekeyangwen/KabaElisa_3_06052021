@@ -1,7 +1,6 @@
 .header {
   &_accueil {
     border-bottom: solid $fourth-color;
-    box-shadow: 3px;
   }
   &_logo {
     @include margin-cote;

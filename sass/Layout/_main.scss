@@ -67,13 +67,14 @@
 
 .bold {
   font-weight: $bold;
+  font-size: 0.9rem;
   margin-bottom: 0rem;
   margin-top: 1rem;
   @include ellipsis;
 }
 
 .smaller {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
   @include ellipsis;
 }
